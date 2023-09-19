@@ -1,0 +1,49 @@
+.products-section{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+}
+.products-list{
+    display: flex;
+    flex-direction: column;
+}
+ @media screen and (min-width: 400px) {
+    .products-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }
+ }
+
+ @media screen and (max-width: 740px) {
+  .products-section {
+    flex-direction: column;
+  }
+ }
+
+ .loader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(23, 21, 21, 0.2);
+    border-top: 4px solid #007bff; /* Change this to your desired spinner color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .products-failure-section{
+    margin: auto;
+    width: 90%;
+  }
