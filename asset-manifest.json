@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NxtKart/static/css/main.f3e27b2c.css",
+    "main.js": "/NxtKart/static/js/main.b5041d39.js",
+    "static/js/787.d7f349e8.chunk.js": "/NxtKart/static/js/787.d7f349e8.chunk.js",
+    "index.html": "/NxtKart/index.html",
+    "main.f3e27b2c.css.map": "/NxtKart/static/css/main.f3e27b2c.css.map",
+    "main.b5041d39.js.map": "/NxtKart/static/js/main.b5041d39.js.map",
+    "787.d7f349e8.chunk.js.map": "/NxtKart/static/js/787.d7f349e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3e27b2c.css",
+    "static/js/main.b5041d39.js"
+  ]
+}
