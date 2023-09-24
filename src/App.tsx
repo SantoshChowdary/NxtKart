@@ -10,6 +10,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import NotFound from './components/NotFound';
 import ProductsSection from './components/ProductsSection/MainProductsSection';
 import ProductDetails from './components/ProductsSection/ProductDetails';
+import MainCartView from './components/Cart/MainCartView';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <ProtectedRoute exact path="/products" component={ProductsSection} />
         <ProtectedRoute path="/not-found" component={NotFound} />
         <ProtectedRoute path="/products/:id" component={ProductDetails} />
+        <ProtectedRoute path="/cart" component={MainCartView} />
         <Redirect to="/not-found" />
       </Switch>
 

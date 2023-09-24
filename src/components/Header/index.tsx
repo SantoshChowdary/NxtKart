@@ -1,11 +1,18 @@
 import {Link, withRouter, useHistory} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import { useSelector } from 'react-redux'
 import './index.css'
+
+interface CartProductState {
+  cart : any
+}
 
 
 const Header = (props : any)  => {
 
   const history = useHistory()
+  const cartProducts = useSelector((state : CartProductState) => state.cart)
+  // console.log(cartProducts)
 
   const logOutUser = () => {
     Cookies.remove("jwt_token")
@@ -57,6 +64,7 @@ const Header = (props : any)  => {
             <li className="nav-menu-item">
               <Link to="/cart" className="nav-link">
                 Cart
+                <span style={{backgroundColor: "skyblue", borderRadius: "5px", marginLeft: "5px", padding: "0 5px"}}>{cartProducts.cartList.length}</span>
               </Link>
             </li>
           </ul>
@@ -97,6 +105,7 @@ const Header = (props : any)  => {
                 alt="nav cart"
                 className="nav-bar-image"
               />
+              <span style={{backgroundColor: "skyblue", borderRadius: "5px", marginLeft: "5px", padding: "0 5px"}}>{cartProducts.cartList.length}</span>
             </Link>
           </li>
         </ul>
